@@ -43,7 +43,7 @@
 						<div class="right_bord"></div>
                           <h1>Karthik Janarthanan</h1>
                     <span>Computer Science Graduate student at Unversity at Buffalo.</span>
-                     <span>Professional experience of 4+ years in Web Development and programming.</span>
+                     <span>Professional experience of 3+ years in Web Development and programming.</span>
 					</div>
 
 
@@ -94,70 +94,217 @@
                         <h3>Karthik Janarthanan</h3>
 <!--                        Hello I'm Karthik, -->
                         <h4><strong>Programmer &amp; Web Developer</strong></h4>
-                        <p>Integer a lacus at sem suscipit euismod a eu elit. Donec dapibus mauris nec sapien convallis venenatis. Nullam sagittis feugiat sapien ut suscipit. Nullam tristique sodales ipsum, in blandit massa. Morbi sollicitudin lorem est, sed iaculis tortor luctus eget.
-<br><br>
-Proin sem tellus, consectetur vel venenatis quis, consequat nec nibh. Ut sit amet turpis non libero sodales rhoncus et non sem. Proin dapibus eleifend nisi, gravida hendrerit enim consectetur eu. </p>
+                        <p> I'm a senior graduate majoring in Computer Science at the University at Buffalo, SUNY.
+<br><br>As a computer science professional, I'm passionate about visualizing and building solutions to simplify and improve our activities. From my prior experiences, I have realized having a good knowledge on the latest technology is essential to build better solutions. <br><br>Currently I'm seeking full-time opportunities(starting Jan 2016 ) that will allow me to effectively utilize the diverse skills that I have gained through my academic and professional experiences, at the time enhances my opportunities to explore new technologies.
+
+ </p>
                     </div>
 
                 </div>
             </div>
         </section>
         <section id="projects">
-            <div class="projects-filter">
+            <div class="container">
+            <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Portfolio</h2>
+<!--                        <h3 class="section-subheading text-muted">Feel free to leave a message</h3>-->
+                    </div>
+                </div>
+            <div class="row">
+                <div class="projects-filter">
 
-                <a href="#" data-filter="*" class="current">All Categories</a>
-                <a href="#" data-filter=".people">People</a>
-                <a href="#" data-filter=".places">Places</a>
-                <a href="#" data-filter=".food">Food</a>
-                <a href="#" data-filter=".objects">Objects</a>
+                    <a href="#" data-filter="*" class="current">All</a>
+                    <a href="#" data-filter=".ds">Distributed Systems</a>
+                    <a href="#" data-filter=".ir">Information Retrival</a>
+                    <a href="#" data-filter=".ml">Machine learning</a>
+                    <a href="#" data-filter=".os">Operating System</a>
+                    <a href="#" data-filter=".other">Others</a>
 
+                </div>
             </div>
-<div class="expander clearfix" style="display: block;">
+
+<div class="expander clearfix" >
     </div>
+            <div class="row">
             <div class="projects-container">
 
-                <div class="objects">
-                    <a class="expand-view" href="http://demo.mythemeshop.com/onepage/?portfolio=title-of-the-project-goes-here" data-id="71">
-                        <img src="./image/200x200.png" alt="image"/>
+
+                <div class="os">
+                    <a class="expand-view" href="" data-id="1">
+                        <img src="./image/os3.jpg" alt="OS/161"/>
                         <div class="overlay">
                             <div class="overlay_container">
-                                <h4>TITLE OF THE PROJECT GOES HERE</h4>
-                                <p>Duis cursus, augue tempus venenatis fermentum, massa tellus posuere augue, sit amet consectetur ante</p>
+                                <h4>OS/161: Design and Implementation of working System Software using Kernel Programming</h4>
                                 <span class="button"><i class="fa fa-search-plus"></i>View More</span>
                             </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
                         </div>
 
-                        <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+
                     </a>
                 </div>
-                <div class="people places">
-                    <img src="./image/200x200.png" alt="image">
+                <div class="ds">
+                    <a class="expand-view" href="" data-id="2">
+                        <img src="./image/dynamo3.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>Amazon's Dynamo styled Key-Value Storage</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+
+                    </a>
                 </div>
 
-                <div class="food">
-                    <img src="./image/200x200.png" alt="image">
+                <div class="ml">
+                    <a class="expand-view" href="" data-id="3">
+                        <img src="./image/neural1.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>Handwritten Digits Classification using Neural Network</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+
+                    </a>
                 </div>
 
-                <div class="people places">
-                    <img src="./image/200x200.png" alt="image">
+                <div class="ir">
+                    <a class="expand-view" href="" data-id="4">
+                        <img src="./image/newsroom2.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>NewsRoom</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+                    </a>
                 </div>
 
-                <div class="places objects">
-                    <img src="./image/200x200.png" alt="image">
+                <div class="ds">
+                    <a class="expand-view" href="" data-id="5">
+                        <img src="./image/chord1.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>Distributed HashTable using Chord Protocol</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+
+                    </a>
                 </div>
 
-                <div class="people food objects">
-                    <img src="./image/200x200.png" alt="image">
+                <div class="ml">
+                    <a class="expand-view" href="" data-id="6">
+                        <img src="./image/svm.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>Logistic Regression and SVM</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+
+                    </a>
                 </div>
 
-                <div class="food objects">
-                    <img src="./image/200x200.png" alt="image">
+                <div class="ds">
+                    <a class="expand-view" href="" data-id="7">
+                        <img src="./image/fifo1.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>Group Messenger with Total and FIFO Ordering Guarantees</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+
+                    </a>
                 </div>
 
-                <div class="food">
-                    <img src="./image/200x200.png" alt="image">
-                </div>
+                <div class="ml">
+                    <a class="expand-view" href="" data-id="8">
+                        <img src="./image/classification.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>Classification and Regression</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
 
+
+                    </a>
+                </div>
+                <div class="ir">
+                    <a class="expand-view" href="" data-id="9">
+                        <img src="./image/ir3.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>News Indexer</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+
+                    </a>
+                </div>
+                <div class="other">
+                    <a class="expand-view" href="" data-id="10">
+                        <img src="./image/parser1.png" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>Object Oriented Top-Down Parser</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+
+                    </a>
+                </div>
+                <div class="other">
+                    <a class="expand-view" href="" data-id="11">
+                        <img src="./image/secure2.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>Secure Client Group Interaction System</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+
+                    </a>
+                </div>
+                <div class="other">
+                    <a class="expand-view" href="" data-id="12">
+                        <img src="./image/optimx1.jpg" alt="image"/>
+                        <div class="overlay">
+                            <div class="overlay_container">
+                                <h4>OptimX</h4>
+                                <span class="button"><i class="fa fa-search-plus"></i>View More</span>
+                            </div>
+                            <div class="loader" style="display:none"><i class="fa fa-spinner fa-spin"></i></div>
+                        </div>
+
+
+                    </a>
+                </div>
+            </div>
+            </div>
             </div>
         </section>
 
@@ -214,14 +361,11 @@ Proin sem tellus, consectetur vel venenatis quis, consequat nec nibh. Ut sit ame
         </div>
         <footer>
             <div class="social social-footer">
-                <ul>
-                    <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-lg fa-github"></i></a></li>
-                    <li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-lg fa-stack-overflow"></i></a></li>
-                    <li><a href="#"><i class="fa fa-lg fa-skype"></i></a></li>
+                <ul><li><a href="https://www.linkedin.com/in/karthikjanarthanan" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/karthik-j" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/karthikj30" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                    <li><a href="https://google.com/+KarthikJanarthanan" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                    <li><a href="#"  target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
                 </ul>
                 <p class="">Connect with me</p>
                 </div>

@@ -8,16 +8,17 @@ $('#myNavBar').affix({
 	$('a.expand-view').click(function(e){
 		e.preventDefault();
         var $this = $(this),
-        post_id = $this.attr('data-id'),
+        project_id = $this.attr('data-id'),
         $container = $('.expander');
         $this.find('.loader').show();
         $container.slideUp(500, function() {
             $.ajax({
                 method: 'post',
-                url: '',
-                data: {'id':post_id,'action':'get_portfolio_item'},
+                url: 'projects',
+                data: {'id':project_id},
 
                 success: function(data) {
+
                     $container.empty().append(data).slideDown(500, function() {
                         $('html, body').animate({
     						scrollTop: $container.offset().top - 100,
@@ -26,7 +27,7 @@ $('#myNavBar').affix({
                     $this.find('.loader').hide();
                 },
                 error:function(data) {
-                    var data1 = "<div class='featured_image span_6 col'>			                <img width='538' height='294' src='http://demo.mythemeshop.com/onepage/files/2014/06/wallpaper-1335059-538x294.jpg' class='attachment-featured-small wp-post-image' alt='wallpaper-1335059' title=''>            		</div>		<div class='content span_6 col'>			<h2 class='single-title'>TITLE OF THE PROJECT GOES HERE</h2>			<div class='portfolio-content'>	            <p>Duis cursus, augue tempus venenatis fermentum, massa tellus posuere augue, sit amet consectetur ante arcu vitae metus. Suspendisse aliquet congue cursus. Pellentesque vehicula elementum erat, in porttitor enim venenatis porta. Aenean eu nunc nec magna ullamcorper semper.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam dictum tortor tristique odio fermentum interdum interdum metus lacinia. Suspendisse imperdiet ligula in felis rutrum accumsan. Morbi eu ipsum eget odio egestas tristique eget nec erat.</p>			</div>			<div class='close-view'>				<a href='#'><i class='fa fa-times'></i></a>			</div>		</div>";
+                    var data1 = "<div class='content span_6 col'>			<h2 class='single-title'>Error</h2>			<div class='portfolio-content'>	            <p>Oops! there has be an unexpected error</p>			</div>			<div class='close-view'>				<a href='#'><i class='fa fa-times'></i></a>			</div>		</div>";
                     $container.empty().append(data1).slideDown(500, function() {
                         $('html, body').animate({
     						scrollTop: $container.offset().top - 100,

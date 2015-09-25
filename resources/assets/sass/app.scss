@@ -17,13 +17,16 @@ body{
     margin: 0 0 0 0 !important;
     height: 100%;
     width:100%;
-
+    background-color: lightgrey;
     //font
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
 
+section{
+    padding-top: 75px;
+}
 
 .container{
     padding-bottom: 25px;
@@ -73,8 +76,6 @@ p{
     top: 25%;
     left: 25%;
     text-align: center;
-
-
 }
 .slogan{
     display: block;
@@ -82,7 +83,7 @@ p{
     border-bottom: 1px solid #cecece;
 }
 .slogan_text {
-    width: 50%;
+    width: 48%;
     display: inline-block;
     padding: 0 25px;
     text-transform: uppercase;
@@ -98,7 +99,7 @@ p{
     margin-bottom: 8px;
     background: #cecece;
     height: 1px;
-    width: 20%;
+    width: 25%;
 }
 
 .parallax-window {
@@ -121,6 +122,9 @@ p{
 }
 
 //projects/portfolio
+#projects{
+    background-color: white;
+}
 .projects-filter a {
     margin-right: 10px;
     color:#666;
@@ -129,6 +133,7 @@ p{
 
 .projects-filter a.current {
     font-weight:bold;
+    border-radius: 5px;
 }
 
 .projects-container img {
@@ -159,13 +164,43 @@ p{
 
 
 .projects-container a.expand-view .overlay_container {
-    padding: 15% 14%;
+    padding: 10px 5px;
     display: inline-block;
+    font-weight: bold;
 }
-
+.projects-container a.expand-view img{
+    max-width: 200px;
+    min-height: 100px;
+}
 .projects-container  a.expand-view {
     display: inline-block;
     position: relative;
+}
+.projects-container div a.expand-view .overlay h4{
+    font-weight: bold;
+}
+.projects-container div a.expand-view .overlay span {
+    background-color: #FFFFFF;
+    color: #e16e7b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.projects-filter {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.projects-filter li {
+    display: inline-block;
+//    margin-right: 5px;
+}
+
+.projects-filter a.current{
+    background-color: #e16e7b;
+    color: #fff!important;
+    padding: 5px 15px;
 }
 
 .expander {
@@ -220,6 +255,13 @@ p{
 }
 
 //contact
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
+}
 
 //navigation
 
