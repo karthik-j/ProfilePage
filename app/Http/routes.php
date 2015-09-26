@@ -19,6 +19,9 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::group(['before' => 'force.ssl'], function() {
+    // Routes here
+
 Route::post('/projects',  function () {
 
     $string = '[{"project_id": "1", "img" : "./image/os3.jpg","title":"OS/161: Design and Implementation of working System Software using Kernel Programming","period":"Jan 2015 - May 2015","url":"https://github.com/karthik-j/Operating-System-OS161-CS521-Spring-2015.git","description":"- Implementation of synchronization primitives such as locks, condition variables and reader-writer locks for OS/161 standalone kernel.
@@ -116,4 +119,5 @@ Route::post('/mailer', function () {
             echo "Messenge sent.";
         });
 
+});
 });
