@@ -27,11 +27,7 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot($router);
-        $router->filter('force.ssl', function(){
-        if ( ! request()->secure() ) {
-                return redirect()->secure(request()->path());
-            }
-        });
+        
     }
 
     /**
