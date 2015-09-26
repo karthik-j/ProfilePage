@@ -44,7 +44,8 @@ The main goal was to provide both availability and linearizability at the same t
 
     $project_id = strip_tags(trim(Input::get("id")));
 
-
+    $countResult = count($result);
+     error_log("Result json count==> $countResult" , 0);
     $filter = array();
     for ($i = 0; $i < count($result); $i++){
         if($result[$i]->project_id == $project_id){
@@ -52,12 +53,12 @@ The main goal was to provide both availability and linearizability at the same t
             break;
         }
     }
-
-//    if($filter->url != ""){
-//        $output = "<div class='featured_image col-md-6 col-lg-4'>			                <img  src=$filter->img class='' alt=$filter->title title=''>            		</div>		<div class='content col-md-6 col-lg-8'>			<h3 class='single-title'>$filter->title</h3>			<div class='portfolio-content'>	<p><i class=\"fa fa-lg fa-history\"></i> $filter->period</p> <br> <p><i class=\"fa fa-lg fa-github\"></i><a href=\"$filter->url\" target=\"_blank\">$filter->url</a> </p>   <br> <p><b>Skills Used: </b>$filter->skills</p> <br>   <p>$filter->description</p>			</div>					</div><div class='close-view'>				<a href='#'><i class='fa fa-times'></i></a>			</div>";
-//    }else{
+    error_log("Filter object==> $filter" , 0);
+    if($filter->url != ""){
+        $output = "<div class='featured_image col-md-6 col-lg-4'>			                <img  src=$filter->img class='' alt=$filter->title title=''>            		</div>		<div class='content col-md-6 col-lg-8'>			<h3 class='single-title'>$filter->title</h3>			<div class='portfolio-content'>	<p><i class=\"fa fa-lg fa-history\"></i> $filter->period</p> <br> <p><i class=\"fa fa-lg fa-github\"></i><a href=\"$filter->url\" target=\"_blank\">$filter->url</a> </p>   <br> <p><b>Skills Used: </b>$filter->skills</p> <br>   <p>$filter->description</p>			</div>					</div><div class='close-view'>				<a href='#'><i class='fa fa-times'></i></a>			</div>";
+    }else{
         $output = "<div class='featured_image col-md-6 col-lg-4'>			                <img  src=$filter->img class='' alt=$filter->title title=''>            		</div>		<div class='content col-md-6 col-lg-8'>			<h3 class='single-title'>$filter->title</h3>			<div class='portfolio-content'>	<p><i class=\"fa fa-lg fa-history\"></i> $filter->period</p> <br><p><b>Skills Used: </b>$filter->skills</p> <br>   <p>$filter->description</p>			</div>					</div><div class='close-view'>				<a href='#'><i class='fa fa-times'></i></a>			</div>";
-//    }
+    }
 
 
     echo $output;
