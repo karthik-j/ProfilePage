@@ -19,7 +19,7 @@ Route::get('/test', function () {
     return view('test');
 });
 
-Route::post('/projects', ['middleware' => 'secure1', function () {
+Route::post('/projects',  function () {
 
     $string = '[{"project_id": "1", "img" : "./image/os3.jpg","title":"OS/161: Design and Implementation of working System Software using Kernel Programming","period":"Jan 2015 - May 2015","url":"https://github.com/karthik-j/Operating-System-OS161-CS521-Spring-2015.git","description":"- Implementation of synchronization primitives such as locks, condition variables and reader-writer locks for OS/161 standalone kernel.
 - Solving synchronization problems including \"whale-mating\"​ and \"traffic-intersection\" problems.
@@ -62,9 +62,9 @@ The main goal was to provide both availability and linearizability at the same t
 
     echo $output;
 //    echo $filter->content;
-}]);
+});
 
-Route::post('/mailer',['middleware' => 'secure1', function () {
+Route::post('/mailer', function () {
 
         $name = strip_tags(trim(Input::get("name")));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
@@ -116,4 +116,4 @@ Route::post('/mailer',['middleware' => 'secure1', function () {
             echo "Messenge sent.";
         });
 
-}]);
+});
