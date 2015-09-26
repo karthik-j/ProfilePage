@@ -15,13 +15,13 @@
   <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 -->
 
-        {!! Html::style('css/app.css') !!}
+        {!! Html::style('css/app.css', array(), true) !!}
 
 
-        {!! Html::script('js/app.js') !!} <!--Contains jquery and bootstrap-->
-        {!! Html::script('js/parallax.min.js') !!}
-        {!! Html::script('js/isotope.pkgd.min.js') !!}
-        {!! Html::script('js/script.js') !!}
+        {!! Html::script('js/app.js', array(), true) !!} <!--Contains jquery and bootstrap-->
+        {!! Html::script('js/parallax.min.js', array(), true) !!}
+        {!! Html::script('js/isotope.pkgd.min.js', array(), true) !!}
+        {!! Html::script('js/script.js', array(), true) !!}
         <!--Page developed using Laravel 5.1-->
 
 
