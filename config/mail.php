@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'MAIL_USERNAME', 'name' => "ProfileSite Support"],
+    'from' => ['address' => env('MAIL_USERNAME'), 'name' => "ProfileSite Support"],
 
     /*
     |--------------------------------------------------------------------------
