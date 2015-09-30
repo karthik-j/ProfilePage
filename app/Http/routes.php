@@ -166,10 +166,22 @@ Route::post('/mailer', function () {
         $phone = trim(Input::get("phone"));
 
 
-        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ( empty($name)) {
             // 400 (bad request) response code and exit.
             http_response_code(400);
-            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+            echo "Oops! There was a problem with your submission for name. Please complete the form and try again.";
+            exit;
+        }
+        if (empty($message)) {
+            // 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Oops! There was a problem with your submission for message. Please complete the form and try again.";
+            exit;
+        }
+        if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            // 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Oops! There was a problem with your submission for email. Please complete the form and try again.";
             exit;
         }
 
@@ -186,19 +198,6 @@ Route::post('/mailer', function () {
         $email_content .= "Message:\n$message\n";
 
 
-//        $email_headers = "From: $name <$email>";
-
-        // Send the email.
-//        if (mail($recipient, $subject, $email_content, $email_headers)) {
-//            // 200 (okay) response code.
-//            http_response_code(200);
-//            echo "Thank You! Your message has been sent.";
-//        } else {
-//            // 500 (internal server error) response code.
-//
-//            http_response_code(500);
-//            echo "Oops! Something went wrong and we couldn't send your message.";
-//        }
 
         Mail::raw($email_content, function($message1) use($email , $name , $recipient)
         {
@@ -206,7 +205,7 @@ Route::post('/mailer', function () {
 
             $message1->to( $recipient)->subject('ProfilePage - Contact!');
 
-            echo "Messenge sent.";
+            echo "Message sent. Will reach you shortly";
         });
 
 });

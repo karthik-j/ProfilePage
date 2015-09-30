@@ -14,11 +14,22 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 -->
+<!--
+        {!! Html::style('css/app.css') !!}
+
+
+        {!! Html::script('js/app.js') !!} Contains jquery and bootstrap
+        {!! Html::script('js/parallax.min.js') !!}
+        {!! Html::script('js/isotope.pkgd.min.js') !!}
+        {!! Html::script('js/jqBootstrapValidation.js') !!}
+        {!! Html::script('js/script.js') !!}
+-->
+
 
         {!! Html::style('css/app.css', array(), true) !!}
 
 
-        {!! Html::script('js/app.js', array(), true) !!} <!--Contains jquery and bootstrap-->
+        {!! Html::script('js/app.js', array(), true) !!} <!-- Contains jquery and bootstrap-->
         {!! Html::script('js/parallax.min.js', array(), true) !!}
         {!! Html::script('js/isotope.pkgd.min.js', array(), true) !!}
         {!! Html::script('js/script.js', array(), true) !!}
@@ -36,17 +47,22 @@
         <section id="home-page"  class="parallax-window" data-parallax="scroll" data-image-src="./image/objects.jpg">
             <div class="container">
 
-                <div class="home-box">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-2 col-sm-0"></div>
+                    <div class="col-lg-6 col-md-8 col-sm-12 text-center">
+                        <div class="home-box">
                      <div class="slogan">
-						<div class="left_bord"></div>
-						<div class="slogan_text">The name is</div>
-						<div class="right_bord"></div>
-                          <h1>Karthik Janarthanan</h1>
-                    <span>Computer Science Graduate student at Unversity at Buffalo.</span>
-                     <span>Professional experience of 3+ years in Web Development and programming.</span>
+                         <div class="row">
+                             <div class="col-md-3"><div class="left_bord"></div></div>
+                             <div class="col-md-6"><div class="slogan_text">The name is</div></div>
+				             <div class="col-md-3"><div class="right_bord"></div></div>
+                         </div>
+                         <h1>Karthik Janarthanan</h1>
+                         <span>Computer Science Graduate student at Unversity at Buffalo.</span>
+                         <span>Professional experience of 3+ years in Web Development and programming.</span>
 					</div>
-
-
+                        </div></div>
+                        <div class="col-lg-3 col-md-2 col-sm-0"></div>
                 <a class="button" title="" data-slide="2"></a>
 
                 </div>
@@ -95,7 +111,7 @@
 <!--                        Hello I'm Karthik, -->
                         <h4><strong>Programmer &amp; Web Developer</strong></h4>
                         <p> I'm a senior graduate majoring in Computer Science at the University at Buffalo, SUNY.
-<br><br>As a computer science professional, I'm passionate about visualizing and building solutions to simplify and improve our activities. From my prior experiences, I have realized having a good knowledge on the latest technology is essential to build better solutions. <br><br>Currently I'm seeking full-time opportunities(starting Jan 2016 ) that will allow me to effectively utilize the diverse skills that I have gained through my academic and professional experiences, at the time enhances my opportunities to explore new technologies.
+<br><br>As a computer science professional, I'm passionate about visualizing and building solutions to simplify and improve our activities. From my prior experiences, I have realized having a good knowledge on the latest technology is essential to build better solutions. <br><br>Currently I'm seeking full-time opportunities(starting Jan 2016 ) that will allow me to effectively utilize the diverse skills that I have gained through my academic and professional experiences, at the same time enhances my opportunities to explore new technologies.
 
  </p>
                     </div>
@@ -324,25 +340,25 @@
                                 <div class="col-md-6">
                                     <div class="form-group  input-group">
                                         <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                        <input type="text" class="form-control" placeholder="Your Name *" name="name" id="name" data-validation-required-message="Please enter your name." aria-invalid="false">
-                                        <p class="help-block text-danger"></p>
+                                        <input type="text" class="form-control" placeholder="Your Name *" name="name" id="name" required="">
+
                                     </div>
                                     <div class="form-group  input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-                                        <input type="email" class="form-control" placeholder="Your Email *" name="email" id="email" data-validation-required-message="Please enter your email address." aria-invalid="false">
-                                        <p class="help-block text-danger"></p>
+                                        <input type="email" class="form-control" placeholder="Your Email *" name="email" id="email"  required="">
+
                                     </div>
                                     <div class="form-group  input-group">
                                          <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
-                                        <input type="tel" class="form-control" placeholder="Your Phone *" name="phone" id="phone"  data-validation-required-message="Please enter your phone number." aria-invalid="false">
-                                        <p class="help-block text-danger"></p>
+                                        <input type="tel" class="form-control" placeholder="Your Phone Number" name="phone" id="phone" >
+
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
 <!--                                        <span class="input-group-addon"><i class="fa fa-pencil-square-o fa-fw"></i></span>-->
-                                        <textarea class="form-control" placeholder="Your Message *" id="message" name="message" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
-                                        <p class="help-block text-danger"></p>
+                                        <textarea class="form-control" placeholder="Your Message *" id="message" name="message" required=""></textarea>
+
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>

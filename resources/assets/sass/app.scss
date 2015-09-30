@@ -65,16 +65,16 @@ p{
 }
 
 .home-box{
-    width: 50%;
-    height: 50%;
+//    width: 50%;
+//    height: 50%;
 //    opacity: .5;
-    padding: 10px;
-    position: absolute;
+    padding: 25% 10px 10px 10px;
+//    position: absolute;
     color: aliceblue;
 //    background-color: dimgray;
-    border-radius: 10px;
-    top: 25%;
-    left: 25%;
+//    border-radius: 10px;
+//    top: 25%;
+//    left: 25%;
     text-align: center;
 }
 .slogan{
@@ -83,7 +83,7 @@ p{
     border-bottom: 1px solid #cecece;
 }
 .slogan_text {
-    width: 48%;
+//    width: 48%;
     display: inline-block;
     padding: 0 25px;
     text-transform: uppercase;
@@ -95,11 +95,11 @@ p{
 }
 
 .left_bord, .right_bord {
-    display: inline-block;
-    margin-bottom: 8px;
+    display: block;
+    margin-top: 12px;
     background: #cecece;
     height: 1px;
-    width: 25%;
+//    width: 25%;
 }
 
 .parallax-window {
