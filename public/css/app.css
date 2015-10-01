@@ -6205,6 +6205,9 @@ p {
 .navbar-brand {
   color: #fff; }
 
+header.navbar.navbar-default {
+  background-color: #1B1A1A; }
+
 .navbar-default {
   background: transparent;
   color: #fff;
@@ -6213,8 +6216,8 @@ p {
   margin-bottom: 0; }
 
 .navbar-default .navbar-toggle {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
   margin-right: 0;
   border-color: #fff;
   margin-top: 8px;
@@ -6244,6 +6247,9 @@ p {
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2); }
 
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent; }
+
 .navbar-default .navbar-nav > li > a:hover {
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
@@ -6271,6 +6277,21 @@ footer {
   border-radius: 25px;
   z-index: 2; }
 
+.social.social-header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center; }
+
+.social.social-header i {
+  background-color: transparent; }
+
+.social {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 25px; }
+
 .social-footer {
   background: #111111;
   padding-top: 75px;
@@ -6278,11 +6299,8 @@ footer {
   text-align: center;
   border-bottom: 1px solid #292929; }
 
-.social {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  padding-top: 25px; }
+.social-footer p {
+  text-align: center; }
 
 .social ul {
   margin: 0;
@@ -6294,11 +6312,11 @@ footer {
   display: inline-block; }
 
 .social i {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   color: #FFF;
   background-color: #909AA0;
-  font-size: 12px;
+  font-size: 17px;
   text-align: center;
   padding: 10px 5px 5px 5px;
   border-radius: 50%;
