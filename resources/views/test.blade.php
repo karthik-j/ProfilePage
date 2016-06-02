@@ -105,7 +105,7 @@ ___________________▄▄▄▀▀▀▀▀▀▀▄
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <!--     {!! Html::style('css/app.css') !!}
+       <!-- {!! Html::style('css/app.css') !!}
 
 
         {!! Html::script('js/app.js') !!}Contains jquery and bootstrap
@@ -113,8 +113,8 @@ ___________________▄▄▄▀▀▀▀▀▀▀▄
         {!! Html::script('js/isotope.pkgd.min.js') !!}
         {!! Html::script('js/jqBootstrapValidation.js') !!}
         {!! Html::script('js/script.js') !!}
+ -->
 
--->
 
         {!! Html::style('css/app.css', array(), true) !!}
 
@@ -149,7 +149,8 @@ ___________________▄▄▄▀▀▀▀▀▀▀▄
 				             <div class="col-md-3"><div class="right_bord"></div></div>
                          </div>
                          <h1>Karthik Janarthanan</h1>
-                         <span>Computer Science Graduate student at Unversity at Buffalo.</span>
+                         <span>Software Engineer, Cerner Corporation.</span>
+                         <span>Computer Science Graduate, Unversity at Buffalo.</span>
                          <span>Professional experience of 3+ years in Web Development and programming.</span>
 					</div>
                         </div></div>
@@ -210,8 +211,8 @@ ___________________▄▄▄▀▀▀▀▀▀▀▄
                         <h3>Karthik Janarthanan</h3>
 <!--                        Hello I'm Karthik, -->
                         <h4><strong>Programmer &amp; Web Developer</strong></h4>
-                        <p> I'm a senior graduate majoring in Computer Science at the University at Buffalo, SUNY.
-<br><br>As a computer science professional, I'm passionate about visualizing and building solutions to simplify and improve our activities. From my prior experiences, I have realized having a good knowledge on the latest technology is essential to build better solutions. <br><br>Currently I'm seeking full-time opportunities(starting Jan 2016 ) that will allow me to effectively utilize the diverse skills that I have gained through my academic and professional experiences, at the same time enhances my opportunities to explore new technologies.
+                        <p> I'm a Computer Science graduate from the University at Buffalo, SUNY.
+<br><br>As a computer science professional, I'm passionate about visualizing and building solutions to simplify and improve our activities. From my prior experiences, I have realized having a good knowledge on the latest technology is essential to build better solutions. <br><br>Currently I'm working as a software engineer at Cerner Corporation. I seek opportunities that will allow me to effectively utilize the diverse skills that I have gained through my academic and professional experiences, at the same time enhances my opportunities to explore new technologies.
 
  </p>
                     </div>

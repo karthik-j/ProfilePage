@@ -77,6 +77,7 @@ p{
 //    left: 25%;
     text-align: center;
 }
+
 .slogan{
     display: block;
     text-align: center;
@@ -100,6 +101,11 @@ p{
     background: #cecece;
     height: 1px;
 //    width: 25%;
+}
+
+
+.slogan>span{
+		display: block;
 }
 
 .parallax-window {
